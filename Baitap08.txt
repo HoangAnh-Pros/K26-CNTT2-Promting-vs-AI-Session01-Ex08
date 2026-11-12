@@ -1,0 +1,40 @@
+Bài 8: Kỹ thuật Chat Summary duy trì Ngữ cảnh phiên tư vấn dài
+Vấn đề : Ngân sách tokens đang vượt quá ngân sách cho phép , cần đóng phiên bản cũ và chuyển sang phiên bản mới
+Yêu cầu : -  Kỹ thuật Chat Summary Block
+          -  Kỹ thuật New Session Prompt
+Giải bài toán :
+Phần 1 : Kỹ thuật Chat Summary Block
+--> hãy tóm tắt cho tôi kế hoạch khuyến mãi "Mùa vàng tri ân" của MartX thành khối chat summary:
+1. Mục tiêu chiến dịch.
+2. Ngân sach tổng và phương án phân bổ.
+3. Các ý tưởng đã được chốt.
+4. Các việc cần làm tiếp theo.
+Phần 2 : Kỹ thuật New Session Promt
+A. Mô phỏng khối "Chat Summary Block" hoàn chỉnh
+Khi AI ở phiên cũ thực thi xong prompt trên, bạn sẽ thu được một khối tóm tắt có cấu trúc mẫu như sau:
+
+[CHAT SUMMARY BLOCK - MÙA VÀNG TRI ÂN]
+
+Mục tiêu: Tri ân khách hàng thân thiết, thúc đẩy doanh số bán lẻ những tháng cuối năm cho hệ thống MartX.
+
+Ngân sách: 500.000.000 VNĐ (Phân bổ: 60% cho voucher giảm giá trực tiếp, 30% cho quà tặng hiện vật, 10% cho chi phí truyền thông).
+
+Ý tưởng đã chốt:
+
+Tặng e-voucher trị giá 50.000 VNĐ cho các đơn hàng từ 300.000 VNĐ trở lên.
+
+Tổ chức minigame tương tác "Vòng quay may mắn" trên nền tảng online.
+
+Miễn phí vận chuyển nội thành cho hóa đơn từ 500.000 VNĐ.
+
+Việc cần làm tiếp theo: Hoàn thiện kịch bản truyền thông chi tiết trên Fanpage và thiết kế hình ảnh (banner visual) cho chương trình vòng quay.
+
+B. Prompt khởi động phiên chat mới
+Bạn copy khối tóm tắt phía trên và dán vào đầu một phiên chat hoàn toàn mới kèm theo đoạn prompt khởi động sau:
+
+Plaintext
+Chào bạn, chúng ta sẽ tiếp tục làm việc về chiến dịch khuyến mãi "Mùa Vàng Tri Ân" của MartX dựa trên ngữ cảnh đã được tóm tắt từ phiên trước dưới đây:
+
+[DÁN KHỐI CHAT SUMMARY BLOCK Ở TRÊN VÀO ĐÂY]
+
+Hãy đọc kỹ khối tóm tắt trên để nắm bắt toàn bộ tiến độ công việc trước đó. Nhiệm vụ ngay lúc này của chúng ta là: Hoàn thiện kịch bản truyền thông chi tiết trên Fanpage và thiết kế banner visual cho vòng quay. Hãy đề xuất các bước triển khai cụ thể tiếp theo cho phần việc này.
